@@ -31,7 +31,7 @@ logo = """
     z$"
    zP
   z"
- /    ThunderGang
+ /    TechyYt
 
 
 
@@ -49,7 +49,7 @@ async def add_bot(bot_token):
 
 async def startup_log_all_done():
     try:
-        await bot.send_message(THUND, f"**ThunderUserbot has been started**")
+        await bot.send_message(THUND, f"**Dark Userbot has been started**")
     except BaseException:
         print("Either PRIVATE_GROUP_ID is wrong or you have left the group.")
 
@@ -65,7 +65,7 @@ else:
             api_hash=Var.API_HASH
         ).start(bot_token=Var.TG_BOT_TOKEN_BF_HER)
         print("Initialisation finished, no errors")
-        print("Starting Userbot")
+        print("Starting Dark Userbot")
         bot.loop.run_until_complete(add_bot(Var.TG_BOT_USER_NAME_BF_HER))
         print("Startup Completed")
     else:
@@ -79,7 +79,7 @@ for name in files:
         shortname = path1.stem
         load_module(shortname.replace(".py", ""))
 
-print("Thunderuserbot has been deployed! ")
+print("darkuserbot has been deployed! ")
 
 print("Setting up Assisting Bot")
 path = "thunderbot/plugins/lightningbot/*.py"
@@ -101,7 +101,7 @@ if LOAD_MYBOT == "True":
     print("Assisting Bot set up completely!")
 
 print(logo)
-print("Thunderuserbot has been started without any issue! Please visit @thunderuserbot on telegram for more")
+print("darkUserbot has been started without any issue! Please visit @darkbotsupport on telegram for more")
 bot.loop.run_until_complete(startup_log_all_done())
 
 if len(argv) not in (1, 3, 4):
