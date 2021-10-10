@@ -75,7 +75,7 @@ async def start_all(event):
                                      startotherena,
                                      buttons=[
                                          [Button.url(
-                                             "ThunderUserbot", url="https://github.com/Thundergang/thunderuserbot")],
+                                             "ThunderUserbot", url="https://github.com/Techybolte/thunderuserbot/edit/master/thunderbot")],
                                          [Button.inline(
                                              "Whats this?", data="thunderbot")]
                                      ]
@@ -97,7 +97,7 @@ async def owner(event):
                                  [Button.inline("Broadcast",
                                                 data="thunderbroad")],
                                  [Button.url("Support",
-                                             url="https://t.me/thunderuserbot")]
+                                             url="https://t.me/darkbotsupport")]
                              ])
 
 
@@ -123,7 +123,7 @@ async def logs(event):
         caption="**Heroku** ThunderUserbot Logs",
         buttons=[
             [Button.url("View Online", f"{url}")],
-            [Button.url("Crashed?", "t.me/thunderuserbot")]
+            [Button.url("Crashed?", "t.me/darkbotsupport")]
         ])
     await asyncio.sleep(5)
     return os.remove('logs.txt')
@@ -161,9 +161,9 @@ async def settings(event):
 async def settings(event):
     await event.edit("Browse through the available options:",
                      buttons=[
-                         [(Button.url("Repository", url="https://github.com/Thundergang/thunderuserbot")),
-                          (Button.url("Deploy Your Own", url="https://t.me/thunderuserbot"))],
-                         [Button.url("Support",
+                         [(Button.url("Repository", url="https://github.com/Techybolte/thunderuserbot/edit/master/thunderbot/")),
+                          (Button.url("Deploy Your Own", url="https://t.me/darkbotsupport"))],
+                         [Button.url("Support",",
                                      url="https://t.me/thunderuserbot")]
                      ])
 
