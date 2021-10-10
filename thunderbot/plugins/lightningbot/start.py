@@ -164,7 +164,7 @@ async def settings(event):
                          [(Button.url("Repository", url="https://github.com/Techybolte/thunderuserbot/edit/master/thunderbot/")),
                           (Button.url("Deploy Your Own", url="https://t.me/darkbotsupport"))],
                          [Button.url("Support",",
-                                     url="https://t.me/thunderuserbot")]
+                                     url="https://t.me/darkbotsupport")]
                      ])
 
 
